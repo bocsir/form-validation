@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>form validation</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="app.js"></script>
+    <script src="https://kit.fontawesome.com/81762fab05.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <section id="form">
+        <h1>Register :)</h1>
+        <form onsubmit="validateForm(event)"> 
+            <label for="username">Username</label>
+            <input type="text" id="username" placeholder="Enter username"></input>
+            <label for="email">Email</label>
+            <input type="text" id="email" placeholder="Enter email"></input>
+            <label for="password">Password</label>
+            <div class="password-container">
+                <input type="password" id="password" placeholder="Enter password"></input>
+                <span class="toggle-eye" onclick="togglePasswordVisibility(this)"><i class="fa-regular fa-eye-slash"></i></span>
+            </div>
+            <label for="confirm-password">Confirm Password</label>
+            <div class="password-container">
+                <input type="password" id="confirm-password" placeholder="Re-enter password"></input>
+                <span class="toggle-eye" onclick="togglePasswordVisibility(this)"><i class="fa-regular fa-eye-slash"></i></span>
+            </div>
+            <button id="submit" type="submit">Submit</button>
+        </form>
+</body>
+</html>
