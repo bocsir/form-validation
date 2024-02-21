@@ -46,12 +46,11 @@ function togglePasswordVisibility(toggleEye) {
     let passwordInput = document.getElementById("password");
     console.log(passwordInput.type);
 
-    if (passwordInput.type === 'password') {
-        passwordInput.type = 'text';
+    if (toggleEye.previousElementSibling.type === 'password') {
+        toggleEye.previousElementSibling.type = 'text';
         toggleEye.innerHTML = '<i class="fa-regular fa-eye"></i>';
-    } else if (passwordInput.type === 'text') {
-
-        passwordInput.type == 'password';
+    } else {
+        toggleEye.previousElementSibling.type = 'password';
         toggleEye.innerHTML = '<i class="fa-regular fa-eye-slash"></i>';
     }
 }
