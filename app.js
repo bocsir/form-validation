@@ -1,3 +1,4 @@
+//clear classlist of each field, add to valid/invalid list
 function validateForm(event) {
     event.preventDefault();
     let username = document.getElementById("username");
@@ -32,19 +33,17 @@ function validateForm(event) {
     } else {
         confirmPassword.classList.add('invalid');
     }
-
 }
 
+//check email format
 function validateEmail(email) {
     var re = /\S+@\S+\.\S+/;
     return re.test(email);
 }
 
 //password toggle
-
 function togglePasswordVisibility(toggleEye) {
     let passwordInput = document.getElementById("password");
-    console.log(passwordInput.type);
 
     if (toggleEye.previousElementSibling.type === 'password') {
         toggleEye.previousElementSibling.type = 'text';

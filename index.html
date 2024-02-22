@@ -9,8 +9,8 @@
     <script src="https://kit.fontawesome.com/81762fab05.js" crossorigin="anonymous"></script>
 </head>
 <body>
-    <section id="form">
-        <h1>Register :)</h1>
+    <section id="form-container">
+        <h1>Register 🍓</h1>
         <form onsubmit="validateForm(event)"> 
             <label for="username">Username</label>
             <input type="text" id="username" placeholder="Enter username"></input>
@@ -26,7 +26,9 @@
                 <input type="password" id="confirm-password" placeholder="Re-enter password"></input>
                 <span class="toggle-eye" onclick="togglePasswordVisibility(this)"><i class="fa-regular fa-eye-slash"></i></span>
             </div>
-            <button id="submit" type="submit">Submit</button>
+            <div id="submit-container">
+                <button id="submit" type="submit">Submit</button>
+            </div>
         </form>
 </body>
 </html>
