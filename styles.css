@@ -5,13 +5,13 @@
 
 @font-face {
     font-family: 'kohinoor-demi';
-    src: url(/assets/fonts/KohinoorLatin-Demi-BF63c765144638d.otf);
+    src: url(assets/fonts/KohinoorLatin-Demi-BF63c765144638d.otf);
 }
 
 body {
     margin: 0;
     height: 100vh;
-    background-image: url(/assets/gradient-4k_a25lZm2UmZqaraWkpJRpZ2lorWdobWw-2546168132.jpg);
+    background-image: url(assets/gradient-4k_a25lZm2UmZqaraWkpJRpZ2lorWdobWw-2546168132.jpg);
     background-size: cover;
     display: flex;
     align-items: center;
@@ -48,7 +48,7 @@ input {
     height: 2rem;
     margin: 10px 0;
     border-radius: 5px;
-    border: 3px solid grey;
+    border: 3px solid black;
     margin-right: 5px;
     font-family: 'kohinoor-demi';
 }
@@ -90,4 +90,10 @@ input {
 
 .password-container input {
     width: 85%;
+}
+
+@media (max-width: 500px) {
+    #form-container {
+        scale: .8;
+    }
 }
