@@ -1,9 +1,4 @@
 @font-face {
-    font-family: 'kohinoor-med';
-    src: url(/assets/fonts/KohinoorLatin-Medium-BF63c76513dba4c.otf);
-}
-
-@font-face {
     font-family: 'kohinoor-demi';
     src: url(assets/fonts/KohinoorLatin-Demi-BF63c765144638d.otf);
 }
@@ -17,7 +12,7 @@ body {
     align-items: center;
     justify-content: center;
     color: rgb(240, 240, 240);
-    font-family: 'kohinoor-med';
+    font-family: 'kohinoor-demi';
 }
 
 #form-container {
