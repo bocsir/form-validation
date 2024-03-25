@@ -42,14 +42,18 @@ function validateEmail(email) {
 }
 
 //password toggle
-function togglePasswordVisibility(toggleEye) {
-    let passwordInput = document.getElementById("password");
+document.querySelectorAll('.toggle-eye').forEach((toggleEye) => {
+    toggleEye.addEventListener('mousedown', () => {
+        // Get the input element preceding the clicked element
+        const inputElement = toggleEye.previousElementSibling;
 
-    if (toggleEye.previousElementSibling.type === 'password') {
-        toggleEye.previousElementSibling.type = 'text';
-        toggleEye.innerHTML = '<i class="fa-regular fa-eye"></i>';
-    } else {
-        toggleEye.previousElementSibling.type = 'password';
-        toggleEye.innerHTML = '<i class="fa-regular fa-eye-slash"></i>';
-    }
-}
+        // Check if the input element exists and if its type is 'password'
+        if (inputElement && inputElement.type === 'password') {
+            inputElement.type = 'text';
+            toggleEye.innerHTML = '<i class="fa-regular fa-eye"></i>';
+        } else if (inputElement && inputElement.type === 'text') {
+            inputElement.type = 'password';
+            toggleEye.innerHTML = '<i class="fa-regular fa-eye-slash"></i>';
+        }
+    });
+});

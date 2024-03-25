@@ -1,6 +1,6 @@
 @font-face {
-    font-family: 'kohinoor-demi';
-    src: url(assets/fonts/KohinoorLatin-Demi-BF63c765144638d.otf);
+    font-family: 'source-font';
+    src: url(assets/fonts/SourceCodePro-SemiBold.ttf);
 }
 
 body {
@@ -12,12 +12,11 @@ body {
     align-items: center;
     justify-content: center;
     color: rgb(240, 240, 240);
-    font-family: 'kohinoor-demi';
+    font-family: 'source-font';
 }
 
 #form-container {
-    width: 400px;
-    height: content;
+    width: 320px;
     background-color: rgb(2, 0, 15);
     display: flex;
     flex-direction: column;
@@ -28,24 +27,25 @@ body {
 }
 
 form {
-    width: 80%;
+    width: 85%;
     display: flex;
     flex-direction: column;
     align-items: left;
 }
 
 form label {
-    font-family: 'kohinoor-demi';
-    margin-top: 20px;
+    font-family: 'source-font';
+    margin-top: 10px;
 }
 
 input {
+    padding: 0 10px;
     height: 2rem;
     margin: 10px 0;
-    border-radius: 5px;
+    border-radius: 8px;
     border: 3px solid black;
     margin-right: 5px;
-    font-family: 'kohinoor-demi';
+    font-family: 'source-font';
 }
 
 .toggle-eye {
@@ -62,6 +62,7 @@ input {
     height: 2.5rem;
     width: 200px;
     font-size: 1rem;
+    font-family: 'source-font';
     background-color: rgb(46, 100, 201);
     color: white;
     margin : 20px;
@@ -69,6 +70,10 @@ input {
     border: transparent;
     border-radius: 5px;
     cursor: pointer;
+}
+
+#submit:hover {
+    background-color: rgba(46, 100, 201, 0.822)
 }
 
 .invalid {
@@ -84,7 +89,7 @@ input {
 }
 
 .password-container input {
-    width: 85%;
+    width: 75%;
 }
 
 @media (max-width: 500px) {
